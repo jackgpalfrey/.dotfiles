@@ -3,12 +3,12 @@ echo "==================== Running Dotfiles Update Script ===================="
 set -e
 
 echo "Updating System..."
-apt update 
-apt upgrade -y
+sudo apt update 
+sudo apt upgrade -y
 
 echo "Installing Ansible"
 if ! [ -x "$(command -v ansible)" ]; then
-    apt install ansible -y
+    sudo apt install ansible -y
 else
     echo "Ansible Already Installed - Skipping"
 fi

@@ -1,0 +1,18 @@
+- name: Install Zsh
+  apt: name=zsh
+  become: true
+- name: Change Shell to Zsh
+  shell: chsh -s `which zsh`
+  args:
+    stdin: "{{ password }}"
+- name: Remove Old OhMyZsh
+  file:
+    state: absent
+    path: ~/.oh-my-zsh/
+- name: Install OhMyZsh
+  shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+- name: Install Zsh autosuggestion plugin
+  git:
+    repo: "https://github.com/zsh-users/zsh-autosuggestions"
+    dest: "~/.oh-my-zsh/plugins/zsh-autosuggestions"
+

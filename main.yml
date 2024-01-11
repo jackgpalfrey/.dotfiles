@@ -1,5 +1,9 @@
 - hosts: localhost
-  become: true
+  vars_prompt:
+    - name: "password"
+      prompt: "Enter your password: "
+      default: "local"
+      private: yes
   tasks:
     - include_tasks: "{{ item}}"
       with_fileglob:

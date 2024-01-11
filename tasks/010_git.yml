@@ -1,5 +1,6 @@
 - name: Install Git
   apt: name=git
+  become: true
 
 - name: Set Git Email
   git_config:
@@ -15,3 +16,4 @@
 
 - name: Install Github CLI
   apt: name=gh
+  become: true
