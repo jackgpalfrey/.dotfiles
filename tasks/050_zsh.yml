@@ -15,4 +15,10 @@
   git:
     repo: "https://github.com/zsh-users/zsh-autosuggestions"
     dest: "~/.oh-my-zsh/plugins/zsh-autosuggestions"
-
+- name: Install Neofetch
+  apt: name=neofetch
+  become: true
+- name: Cleanup Zsh Dotfiles
+  shell: rm ~/.zshrc* -rf
+  args:
+    warn: false

@@ -1,0 +1,5 @@
+- name: Install GNU Stow
+  apt: name=stow
+  become: true
+- name: Stow Home Directory
+  shell: stow home

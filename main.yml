@@ -5,6 +5,5 @@
       default: "local"
       private: yes
   tasks:
-    - include_tasks: "{{ item}}"
-      with_fileglob:
-        - tasks/*.yml
+    - include_tasks: "{{ item }}"
+      loop: "{{ query('fileglob', \"tasks/*.yml\")|sort }}"
