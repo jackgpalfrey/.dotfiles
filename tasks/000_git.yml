@@ -1,0 +1,17 @@
+- name: Install Git
+  apt: name=git
+
+- name: Set Git Email
+  git_config:
+    name: user.email
+    scope: global
+    value: "jackgpalfrey@outlook.com"
+
+- name: Set Git Name
+  git_config:
+    name: user.name
+    scope: global
+    value: "Jack Palfrey"
+
+- name: Install Github CLI
+  apt: name=gh
