@@ -1,0 +1,11 @@
+- name: Install Tmux
+  apt: name=tmux
+  become: true
+- name: Remove Old .tmux directory
+  file:
+    state: absent
+    path: ~/.tmux
+- name: Install TPM
+  git:
+    repo: "https://github.com/tmux-plugins/tpm"
+    dest: "~/.tmux/plugins/tpm"

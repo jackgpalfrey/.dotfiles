@@ -1,3 +1,6 @@
 - name: Install Curl
   apt: name=curl
   become: true
+- name: Install Fzf
+  apt: name=fzf
+  become: true

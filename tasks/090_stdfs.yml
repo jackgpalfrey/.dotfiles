@@ -1,0 +1,12 @@
+- name: Create projects dir
+  file:
+    path: ~/projects
+    state: directory
+- name: Create test dir
+  file:
+    path: ~/test
+    state: directory
+- name: Create tmp dir
+  file:
+    path: ~/tmp
+    state: directory
