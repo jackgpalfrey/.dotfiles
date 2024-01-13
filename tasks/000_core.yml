@@ -1,6 +1,23 @@
 - name: Install Curl
   apt: name=curl
   become: true
+
 - name: Install Fzf
   apt: name=fzf
+  become: true
+
+- name: Install ninja-build (for nvim)
+  apt: name=ninja-build
+  become: true
+
+- name: Install gettext (for nvim)
+  apt: name=gettext
+  become: true
+
+- name: Install cmake
+  apt: name=cmake
+  become: true
+
+- name: Install unzip
+  apt: name=unzip
   become: true

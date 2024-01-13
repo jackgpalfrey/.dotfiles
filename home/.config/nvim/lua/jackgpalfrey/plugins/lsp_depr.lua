@@ -1,0 +1,40 @@
+--
+-- -- Run when LSP connects to a particular buffer.
+-- local on_attach = function(_, bufnr)
+--     lsp = vim.lsp.buf
+--     nmap("<leader>rn", lsp.rename, "[R]e[n]ame")
+--     nmap("<leader>ca", lsp.code_action, "[C]ode [A]ction")
+--     
+--     telebin = require("telescope.builtin")
+--     nmap("gd", telebin.lsp_definitions, "[G]oto [D]efinitions")
+--     nmap("gr", telebin.lsp_references, "[G]oto [R]eferences")
+--     nmap("gi", telebin.lsp_implementations, "[G]oto [I]mplementations")
+--     nmap("gt", telebin.lsp_type_definitions, "[G]oto [T]ype Defintion")
+--     nmap("<leader>ds", telebin.lsp_document_symbols, "[D]ocument [S]ymbols")
+--     nmap("<leader>ws", telebin.dynamic_workspace_symbols, "[W]orkspace [S]ymbols")
+--
+--     nmap("K", lsp.hover, "Hover Documentation")
+--     nmap("<C-k>", lsp.signature_help, "Signature Documentation")
+--
+--     nmap("gD", lsp.declaration, "[G]oto [D]eclaration")
+--     nmap("<leader>wa", lsp.add_workspace_folder, "[W]orkspace [A]dd Folder")
+--     nmap("<leader>wr", lsp.remove_workspace_folder, "[W]orkspace [R]emove Folder")
+--     
+--     nmap("<leader>wl", function()
+--         print(vim.inspect(lsp.list_workspace_folders()))
+--     end, "[W]orkspace [L]ist Folders")
+-- end
+--
+--
+-- return {
+--     "neovim/nvim-lspconfig",
+--     dependencies = {
+--         -- Handles LSP install
+--         {"williamboman/mason.nvim", opts = {}},
+--         { "williamboman/mason-lspconfig.nvim", opts = {}},
+--
+--         -- Provides additional LSP stuff for .config/nvim
+--         "folke/neodev.nvim"
+--     }
+-- }
+return {}

@@ -1,0 +1,15 @@
+- name: Remove Old .neovim_repo directory
+  file:
+    state: absent
+    path: ~/.neovim_repo
+
+- name: Clone Neovim
+  git:
+    repo: "https://github.com/neovim/neovim"
+    dest: "~/.neovim_repo"
+
+- name: Build Neovim
+  shell: cd ~/.neovim_repo && make CMAKE_BUILD_TYPE=RelWithDebInfo
+
+- name: Install Neovim
+  shell: cd ~/.neovim_repo && sudo make install
