@@ -1,6 +1,7 @@
 return {
     "mbbill/undotree",
-    config = function()
-        nmap("<leader>u", vim.cmd.UndotreeToggle, "Toggle [U]ndotree")
-    end
+    keys = {
+        {"<leader>u", "<cmd>lua UndotreeToggle", desc = "Toggle [U]ndotree" }
+    },
+    opts = {}
 }
