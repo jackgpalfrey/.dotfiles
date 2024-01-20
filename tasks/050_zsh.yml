@@ -7,6 +7,8 @@
     stdin: "{{ password }}"
 - name: Install Starship
   shell: curl -sS https://starship.rs/install.sh | sh
+  args:
+    stdin: "y\n"
 - name: Install Neofetch
   apt: name=neofetch
   become: true

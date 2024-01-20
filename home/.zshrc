@@ -14,6 +14,10 @@ HIST_STAMPS="dd/mm/yyyy"
 
 # plugins=(git zsh-autosuggestions)
 
+# keybinds
 bindkey -s ^f "sesh\n"
+
+# aliases
+alias ls="ls --color=auto"
 
 eval "$(starship init zsh)"
