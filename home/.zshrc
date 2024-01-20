@@ -1,5 +1,5 @@
 # Path to oh-my-zsh installation
-export ZSH="$HOME/.oh-my-zsh"
+# export ZSH="$HOME/.oh-my-zsh"
 
 export PATH=$PATH:~/scripts
 
@@ -12,8 +12,8 @@ ZSH_THEME="robbyrussell"
 
 HIST_STAMPS="dd/mm/yyyy"
 
-plugins=(git zsh-autosuggestions)
+# plugins=(git zsh-autosuggestions)
 
 bindkey -s ^f "sesh\n"
 
-source $ZSH/oh-my-zsh.sh
+eval "$(starship init zsh)"
