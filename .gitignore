@@ -1,2 +1,3 @@
 home/.config/tmux/plugins/*
 home/.config/gh/
+home/.config/nvim/lazy-lock.json
