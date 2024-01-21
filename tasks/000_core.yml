@@ -21,3 +21,7 @@
 - name: Install unzip
   apt: name=unzip
   become: true
+
+- name: Install ripgrep
+  apt: name=ripgrep
+  become: true

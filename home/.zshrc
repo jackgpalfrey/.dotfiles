@@ -8,7 +8,11 @@ export LANG=en_UK.UTF-8
 # Name of theme to load 
 # Set to 'random' to load a random theme each time, 
 # you can see which plugin you have with echo $RANDOOM_THEME
-ZSH_THEME="robbyrussell"
+
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
 
 HIST_STAMPS="dd/mm/yyyy"
 
