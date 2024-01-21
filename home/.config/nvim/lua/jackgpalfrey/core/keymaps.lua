@@ -16,11 +16,11 @@ vim.keymap.set({ 'n', 'v', 'i' }, '<C-s>', function()
   vim.cmd.Format()
   vim.cmd.w()
   vim.cmd.stopinsert()
-end)
+end, { desc = "Fomat and [S]ave" })
 
 -- Diagnostic keymaps
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [d]iagnostic message' })
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [d]iagnostic message' })
 vim.keymap.set('n', '<leader>do', vim.diagnostic.open_float, { desc = '[O]pen floating [d]iagnostic message' })
 vim.keymap.set('n', '<leader>dq', vim.diagnostic.setloclist, { desc = '[D]iagnostics [q]uicklist' })
 
@@ -37,10 +37,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 
 -- Supercharge Binds
-vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
-vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = "[K] Move selection up 1" })
+vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv", { desc = "[J] Move selection down 1" })
 
--- vim.keymap.set({"n", "v"}, "<leader>d", "\"_d", { desc = "[D]elete without yanking" }) -- Conflict with Diagnostics
 
 -- Modifier Rebinds
 -- ( Binds that slightly change the original functionality of a bind )

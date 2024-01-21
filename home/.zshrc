@@ -24,4 +24,7 @@ bindkey -s ^f "sesh\n"
 # aliases
 alias ls="ls --color=auto"
 
+alias vim="nvim"
+alias vi="nvim"
+
 eval "$(starship init zsh)"
