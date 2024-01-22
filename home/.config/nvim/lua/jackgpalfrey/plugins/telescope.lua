@@ -23,17 +23,17 @@ return {
     config = function()
         pcall(require("telescope").load_extension, "fzf")
 
-        telebin = require("telescope.builtin")
-        telethem = require("telescope.themes")
+        local telebin = require("telescope.builtin")
+        local telethem = require("telescope.themes")
         vim.api.nvim_create_user_command("TelescopeGrepCurrentBuffer",
             function()
                 telebin.current_buffer_fuzzy_find(telethem.get_dropdown({ winblend = 10, previewer = false }))
             end, {})
     end,
     keys = {
-        { "<leader>?",      "<cmd>Telescope oldfiles<cr>",          desc = "[?] Search recently opened buffers",    mode = {"n", "v"} }, 
+        { "<leader>?",      "<cmd>Telescope oldfiles<cr>",          desc = "[?] Search recently opened buffers",    mode = {"n", "v"} },
         { "<leader>/",      "<cmd>TelescopeGrepCurrentBuffer<cr>",  desc = "[/] Search grep in current buffer",     mode = {"n", "v"} },
-        
+
         { "<leader>pf",     "<cmd>Telescope find_files<cr>",        desc = "Search [P]roject [F]iles",              mode = {"n", "v"} },
         { "<leader>pgf",    "<cmd>Telescope live_grep<cr>",         desc = "Search [P]roject [G]rep [F]uzzy",       mode = {"n", "v"} },
         { "<leader>pgs",    "<cmd>Telescope grep_string<cr>",       desc = "Search [P]roject [G]rep [S]tring",   mode = {"n", "v"} },
