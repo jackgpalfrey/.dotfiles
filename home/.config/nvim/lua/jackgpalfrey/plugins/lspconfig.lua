@@ -107,7 +107,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 return {
     "neovim/nvim-lspconfig",
-    event = { "BufReadPre", "BufNewFile" },
+    event = { "BufRead" },
     dependencies = { "folke/neodev.nvim", },
     config = config,
 }
