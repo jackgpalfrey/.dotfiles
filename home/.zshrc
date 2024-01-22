@@ -27,4 +27,7 @@ alias ls="ls --color=auto"
 alias vim="nvim"
 alias vi="nvim"
 
+alias python="python3"
+alias py="python3"
+
 eval "$(starship init zsh)"

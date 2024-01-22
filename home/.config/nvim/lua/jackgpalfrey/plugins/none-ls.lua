@@ -14,12 +14,13 @@ return {
                 -- Lua
                 formatting.stylua,
 
+                -- Python
+                diagnostics.mypy,
+                diagnostics.ruff,
+                formatting.black,
+
                 -- Web Dev
                 formatting.prettier,
-
-                -- Python
-                formatting.black,
-                diagnostics.flake8,
 
                 -- General
                 completion.spell
