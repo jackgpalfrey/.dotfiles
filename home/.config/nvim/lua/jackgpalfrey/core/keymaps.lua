@@ -18,11 +18,6 @@ vim.keymap.set({ 'n', 'v', 'i' }, '<C-s>', function()
   vim.cmd.stopinsert()
 end, { desc = "Fomat and [S]ave" })
 
--- Diagnostic keymaps
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [d]iagnostic message' })
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [d]iagnostic message' })
-vim.keymap.set('n', '<leader>do', vim.diagnostic.open_float, { desc = '[O]pen floating [d]iagnostic message' })
-vim.keymap.set('n', '<leader>dq', vim.diagnostic.setloclist, { desc = '[D]iagnostics [q]uicklist' })
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
