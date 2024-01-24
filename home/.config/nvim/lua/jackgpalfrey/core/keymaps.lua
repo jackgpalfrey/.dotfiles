@@ -18,6 +18,8 @@ vim.keymap.set({ 'n', 'v', 'i' }, '<C-s>', function()
   vim.cmd.stopinsert()
 end, { desc = "Fomat and [S]ave" })
 
+vim.keymap.set("n", "<C-f>", "<cmd>terminal sesh<cr>i", { desc = "Switch session" })
+
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
