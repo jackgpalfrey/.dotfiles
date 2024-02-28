@@ -5,15 +5,15 @@ local opts = {
 
     highlight = { enable = true, additional_vim_regex_highlighting = false},
     indent = { enable = true },
-    incremental_selection = {
-        enable = true,
-        keymaps = {
-            init_selection = "<C-space>",
-            node_incremental = "<C-space>",
-            scope_incremental = "<C-s>",
-            node_decremenatal = "<M-space>"
-        }
-    },
+    -- incremental_selection = {
+    --     enable = true,
+    --     keymaps = {
+    --         init_selection = "<C-space>",
+    --         node_incremental = "<C-space>",
+    --         scope_incremental = "<C-s>",
+    --         node_decremenatal = "<M-space>"
+    --     }
+    -- },
     textobjects = {
         select = { enable = true, lookahead = true, },
         move = { set_jumps = true },

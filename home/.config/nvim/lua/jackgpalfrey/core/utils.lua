@@ -31,3 +31,8 @@ get_py_path = function()
     print(py_path)
     return py_path
 end
+
+function DEPR(func)
+    vim.api.nvim_echo({{"DEPRECATED - Remove this depr() from config if used.", "error"}}, false, {})
+    pcall(func)
+end
