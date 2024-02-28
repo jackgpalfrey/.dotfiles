@@ -1,0 +1,24 @@
+{
+    "__meta__": {
+        "about": "HTTPie session file",
+        "help": "https://httpie.io/docs#sessions",
+        "httpie": "2.6.0"
+    },
+    "auth": {
+        "password": null,
+        "type": null,
+        "username": null
+    },
+    "cookies": {
+        "session": {
+            "expires": null,
+            "path": "/",
+            "secure": false,
+            "value": "eyJyb2xlIjo5LCJ1c2VybmFtZSI6ImFkbWluIn0.ZdufgQ.R1dcLamEeRe051nkzJSJnzH8J8c"
+        }
+    },
+    "headers": {
+        "Accept": "application/json, */*;q=0.5",
+        "branch": "london-stpancras"
+    }
+}

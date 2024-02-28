@@ -4,4 +4,7 @@ return {
     "yamlls",
     "pyright",
     "gopls",
+    "svelte",
+    "tailwindcss",
+    "tsserver"
 }
