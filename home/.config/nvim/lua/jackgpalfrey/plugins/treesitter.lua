@@ -32,7 +32,7 @@ end
 
 return {
     "nvim-treesitter/nvim-treesitter",
-    event = "BufRead",
+	event = { "BufReadPost", "BufNewFile" },
     dependencies = { "nvim-treesitter/nvim-treesitter-textobjects", },
     build = ":TSUpdate",
     config = config
