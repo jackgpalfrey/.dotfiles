@@ -1,6 +1,6 @@
 return {
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
         options = {
             theme = "catppuccin-mocha",
@@ -11,7 +11,7 @@ return {
             lualine_c = { "filename" },
             lualine_x = { "encoding", "fileformat", "filetype" },
             lualine_y = { "searchcount", "selectioncount", "progress" },
-            lualine_z = { "location" }
-        }
-    }
+            lualine_z = { "location" },
+        },
+    },
 }
